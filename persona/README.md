@@ -18,12 +18,15 @@ Gather reference images for both the body and head. I used [these references](ht
 Scale the reference images to a height of 1.70 cm to match the intended height of the woman character. Duplicate the references and position them in front and to the left of a cube, simulating a modeling booth centered on the world origin. Ensure the head reference fits the body reference appropriately.  
 
 ### Head Modeling
-- ![Head with vertices](images/Head_vertex.png)
+<p style="margin-top: 20px; margin-bottom: 20px;">
+  <img src="images/Head_vertex.png" alt="Head vertices" width="50%">
+</p>
+
 Start by modeling the head using a plane and manipulating it to follow the coloured guidelines of the head reference. In order to model the surface better, use vertices, adjusting them according to the reference images. Repeat until you have the head (leave out the eye, mouth and ear area).
 
 <p style="margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Eye_mask.png" alt="Eye mask" width="25%">
-  <img src="images/Ear_lobe.png" alt="Earlobe" width="25%">
+  <img src="images/Eye_mask.png" alt="Eye mask" width="35%">
+  <img src="images/Ear_lobe.png" alt="Earlobe" width="35%">
 </p>
 
 Then start modelling the eye, mouth and ear as separate entities. Use a circle to shape the eye and mouth regions. Create the eyeball with an UV sphere. Use an additional reference image to model the ears. Utilize proportional editing to refine curves and achieve a more natural look.
@@ -32,7 +35,10 @@ Then start modelling the eye, mouth and ear as separate entities. Use a circle t
 
 
 ### Body Modeling
-![Torso](images/Torso_with_reference.png)
+<p style="margin-top: 20px; margin-bottom: 20px;">
+  <img src="images/Torso_with_reference.png" alt="Torso" width="35%">
+</p>
+
 Begin with a cylinder to model the body. Shape the torso always by modelling the vertices and ajusting them based on the reference. 
 
 Beware, when looking at the front reference adjust only on the x axis, for the left only the y!
