@@ -31,8 +31,6 @@ Start by modeling the head using a plane and manipulating it to follow the colou
 
 Then start modelling the eye, mouth and ear as separate entities. Use a circle to shape the eye and mouth regions. Create the eyeball with an UV sphere. Use an additional reference image to model the ears. Utilize proportional editing to refine curves and achieve a more natural look.
 
-https://github.com/RobCTs/Interactive_Graphics_project/assets/146442289/543e1bcf-dc2e-479e-8e0a-9033a03efcfd
-
 
 ### Body Modeling
 
