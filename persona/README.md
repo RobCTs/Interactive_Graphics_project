@@ -22,8 +22,8 @@ Scale the reference images to a height of 1.70 cm to match the intended height o
 Start by modeling the head using a plane and manipulating it to follow the coloured guidelines of the head reference. In order to model the surface better, use vertices, adjusting them according to the reference images. Repeat until you have the head (leave out the eye, mouth and ear area).
 
 <p style="margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Eye_mask.png" alt="Eye mask" width="50%">
-  <img src="images/Ear_lobe.png" alt="Earlobe" width="50%">
+  <img src="images/Eye_mask.png" alt="Eye mask" width="25%">
+  <img src="images/Ear_lobe.png" alt="Earlobe" width="25%">
 </p>
 
 Then start modelling the eye, mouth and ear as separate entities. Use a circle to shape the eye and mouth regions. Create the eyeball with an UV sphere. Use an additional reference image to model the ears. Utilize proportional editing to refine curves and achieve a more natural look.
