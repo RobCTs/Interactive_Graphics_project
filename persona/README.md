@@ -19,7 +19,7 @@ Scale the reference images to a height of 1.70 cm to match the intended height o
 
 ### Head Modeling
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Head_vertex.png" alt="Head vertices" style="display: block; margin: auto;" width="20%">
+  <img src="images/Head_vertex.png" alt="Head vertices" style="display: block; margin: auto;" width="25%">
 </p>
 
 Start by modeling the head using a plane and manipulating it to follow the coloured guidelines of the head reference. In order to model the surface better, use vertices, adjusting them according to the reference images. Repeat until you have the head (leave out the eye, mouth and ear area).
@@ -35,7 +35,7 @@ Then start modelling the eye, mouth and ear as separate entities. Use a circle t
 ### Body Modeling
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+  <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
 Begin with a cylinder to model the body. Shape the torso always by modelling the vertices and ajusting them based on the reference. 
