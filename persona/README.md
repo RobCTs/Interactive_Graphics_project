@@ -34,8 +34,8 @@ Then start modelling the eye, mouth and ear as separate entities. Use a circle t
 
 ### Body Modeling
 
-<p margin-top: 20px; margin-bottom: 20px;">
-  <img align="center" src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+<p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="15%">
 </p>
 
 Begin with a cylinder to model the body. Shape the torso always by modelling the vertices and ajusting them based on the reference. 
