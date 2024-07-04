@@ -45,7 +45,7 @@ To add realism, the environment is populated with scattered instances of grass, 
 Trees were scattered after creating a tree sample by using the add-on Sapling Tree Gen.
 
  <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Forest.png" alt="Forest" style="display: block; margin: auto;" width="15%">
+  <img src="images/Forest.png" alt="Forest" style="display: block; margin: auto;" width="25%">
 </p>
 
 ### Additional elements
