@@ -23,8 +23,8 @@ Start by modeling the head using a plane and manipulating it to follow the colou
 
 <p style="margin-top: 20px; margin-bottom: 20px;">
   <img src="images/Eye_mask.png" alt="Eye mask" width="50%">
+  <img src="images/Ear_lobe.png" alt="Earlobe" width="50%">
 </p>
-![Earlobe](images/Ear_lobe.png)
 
 Then start modelling the eye, mouth and ear as separate entities. Use a circle to shape the eye and mouth regions. Create the eyeball with an UV sphere. Use an additional reference image to model the ears. Utilize proportional editing to refine curves and achieve a more natural look.
 
