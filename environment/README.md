@@ -2,7 +2,7 @@
 Environment model
 
  <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img  src="images/Final_scene.png" alt="Final scene" style="display: block; margin: auto;" width="15%">
+  <img  src="images/Final_scene.png" alt="Final scene" style="display: block; margin: auto;" width="50%">
 </p>
 
 
@@ -21,8 +21,8 @@ The environment was meticulously designed in Blender, leveraging its powerful to
 ### Ground creation
 Start with a plane and use subdivision and a cloud texture to create natural ground undulations. If you activate the landscape addon, you can use a river setup. 
 
-  <p margin-top: 20px; margin-bottom: 20px;">
-  <img align="center" src="/images/Landscape_river.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+  <p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="/images/Landscape_river.png" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
 
@@ -30,22 +30,22 @@ The ground is dressed with a mix of two ground textures sourced from Poly Haven:
 
 Optionally, mask out and create a bit of concaveness for the path. Use a mix of textures for the path: ([Forest earth](https://polyhaven.com/a/forest_ground_04), [Forest ground](https://polyhaven.com/a/forrest_ground_01)).
 
- <p margin-top: 20px; margin-bottom: 20px;">
-  <img align="center" src="/images/River_and_trees.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+ <p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="/images/River_and_trees.png" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
 ### Vegetation and Rocks
 To add realism, the environment is populated with scattered instances of grass, rocks, and trees ([Grass](https://polyhaven.com/a/grass_medium_01), [Rocks](https://polyhaven.com/a/rock_moss_set_01)). This was achieved by creating a mask to ensure that objects were scattered in predefined areas, preventing an overly uniform distribution. 
 
-   <p margin-top: 20px; margin-bottom: 20px;">
-  <img align="center" src="/images/Bare_tree.png" alt="Torso" style="display: block; margin: auto;" width="15%">
-    <img align="center" src="/images/Leafy_tree.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+   <p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="/images/Bare_tree.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+    <img src="/images/Leafy_tree.png" alt="Torso" style="display: block; margin: auto;" width="15%">
 </p>
 
 Trees were scattered after creating a tree sample by using the add-on Sapling Tree Gen.
 
- <p margin-top: 20px; margin-bottom: 20px;">
-  <img align="center" src="/images/Forest.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+ <p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="/images/Forest.png" alt="Torso" style="display: block; margin: auto;" width="15%">
 </p>
 
 ### Additional elements
