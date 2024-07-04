@@ -1,8 +1,8 @@
 # Interactive Environment
 Environment model
 
- <p margin-top: 20px; margin-bottom: 20px;">
-  <img align="center" src="/images/Final_scene.png" alt="Torso" style="display: block; margin: auto;" width="15%">
+ <p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img  src="images/Final_scene.png" alt="Final scene" style="display: block; margin: auto;" width="15%">
 </p>
 
 
