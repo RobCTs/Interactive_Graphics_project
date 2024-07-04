@@ -61,5 +61,4 @@ Then proceed to model the arms and legs. At the end feet and hands.
 2. **Weight Painting**: Paint weights to ensure proper deformation during animation.
 
 ## Animation
-1. **Basic Animations**: Create basic animations such as walking, idle, etc.
-2. **Controls**: Set up controls for easy animation manipulation.
+See [ReadME](animation/README.md).
