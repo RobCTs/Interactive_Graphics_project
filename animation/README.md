@@ -1,6 +1,10 @@
 # Animations  
 Animations for the Interactive 3D Graphics Project
 
+<p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/Rigging.png" alt="Rigging" style="display: block; margin: auto;" width="25%">
+</p>
+
 ## Overview
 This document details the creation and implementation of animations within the Interactive 3D Graphics Project. It covers the evolution of character animation from initial attempts to the final implementation, including the challenges faced and solutions applied. The project features two main scenes: the main 3D environment and the Changing Room scene, each with its unique set of animations for the character Penelope.
 
@@ -12,11 +16,16 @@ The animations primarily involve the character Penelope performing various actio
 
 - **3D Scene**: Penelope moves within a dynamic 3D environment using predefined animation packs. 
 
+### Rigging
+Creating an armature, or skeleton, for the model is essential for animation. This skeleton will serve as the framework for animating the model, allowing for realistic movement and deformation. To create an armature in Blender, I started by adding a single bone to the scene. Switch to Edit Mode, then extrude new bones by selecting the tip of a bone and pressing E. Then I proceed to position and rotate the bones to match the anatomy of the model, ensuring that the bones are properly aligned with the parts of the model they will control.
+
+Once the skeleton is complete, I had to parent the model to the armature by selecting both the model and the armature. You can complete the rigging by choosing to add automatic weights or paint them. This initial setup allowed the bones to control the mesh.
+
 ## Creative path
 ### Initial Attempts with Nyra
 The animation journey began with Nyra, a character used in previous homework assignments. Initially, I attempted to use JavaScript to create a skeleton for animation. This involved significant challenges, leading me to switch to Blender for sculpting, scene creation, and animations. But there is the draft in the assets folder.
 
-So Nyra was imported in Blender, and a skeleton was created bone by bone to be able to animate her. Using Blender's timeline, I animated Nyra by posing the skeleton and keyframing her positions. The animation was then looped to create continuous motion.
+So Nyra was imported in Blender, and a skeleton was created bone by bone (rigging) to be able to animate her. Using Blender's timeline, I animated Nyra by posing the skeleton and keyframing her positions. The animation was then looped to create continuous motion.
 
 Nyra's clothes and textures were not adequately addressed initially. Which were more evident when trying to animate the warrior. Additionally, there were some unnatural joint rotations and pose transitions which required some fine-tuning, I was not yet capable of doing.
 
