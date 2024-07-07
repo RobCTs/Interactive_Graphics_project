@@ -40,26 +40,25 @@ The final result:
   <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
-Begin with a cylinder to model the body. Shape the torso always by modelling the vertices and ajusting them based on the reference. 
+Begin with a cylinder to model the body. Shape the torso by adjusting the vertices based on the reference images. When looking at the front reference, adjust only along the X-axis; for the side (left) reference, adjust only along the Y-axis. This ensures that the model retains correct proportions from all angles.
 
-Beware, when looking at the front reference adjust only on the x axis, for the left only the y!
-
-Then proceed to model the arms and legs. At the end feet and hands.
+After shaping the torso, proceed to model the arms and legs. Finish by modeling the feet and hands, ensuring all body parts are proportionate and aligned correctly according to the reference images.
 
 
-## TODO
 ## Texturing
-1. **UV Unwrapping**: Unwrap the model for texture application.
-2. **Texture Painting**: Apply textures using Blender's texture painting tools or external software if needed.
+To apply textures accurately, I first had to unwrap the 3D model to create a UV map. This involves flattening the model's surface into a 2D space, allowing for detailed texture application. In Blender, this process involves marking the seams where you want to cut the UV map. After marking the seams, I used the "Unwrap" function to generate the UV map. The UV layout can then be adjusted as needed in the UV Editor to ensure efficient and accurate mapping of the texture.
+
+Once the UV map was ready, I began texture painting. Blender’s texture painting tools allow you to paint directly onto the 3D model or on the texture image itself. To start, switch to Texture Paint Mode by selecting it from the mode menu. Use various brushes and tools to apply colors, textures, and details to the model. This process can be iterative, often requiring multiple adjustments to achieve the desired look.
 
 ## Materials and Shading
-1. **Material Creation**: Create materials and assign them to different parts of the model.
-2. **Shader Setup**: Set up shaders to enhance the visual quality of the model.
+Creating and assigning materials to different parts of the model is essential for defining surface properties such as color, reflectivity, and roughness, to give the model a realistic appearance. In Blender, you can create materials by opening the Material Properties panel and clicking "New" to add a new material. You can also customized the material properties such as Base Color, Metallic, and Roughness to match the desired look.
+
+Enhancing the visual quality of the model involves also setting up shaders. Blender’s Shader Editor allows you to combine different nodes to create complex material effects. To do so, I had to switch to the Shader Editor and add nodes like Principled BSDF, Image Texture, and Mix Shader to create the desired material effects. By carefully creating and assigning materials and setting up shaders, I could significantly enhance the realism and visual appeal of the 3D models.
 
 ## Rigging
-1. **Armature Creation**: Create an armature (skeleton) for the model.
-2. **Weight Painting**: Paint weights to ensure proper deformation during animation.
+Creating an armature, or skeleton, for the model is essential for animation. This skeleton will serve as the framework for animating the model, allowing for realistic movement and deformation. To create an armature in Blender, I started by adding a single bone to the scene. Switch to Edit Mode, then extrude new bones by selecting the tip of a bone and pressing E. Then I proceed to position and rotate the bones to match the anatomy of the model, ensuring that the bones are properly aligned with the parts of the model they will control.
+
+Once the skeleton is complete, I had to parent the model to the armature by selecting both the model and the armature. You can complete the rigging by choosing to add automatic weights or paint them. This initial setup allowed the bones to control the mesh.
 
 ## Animation
-1. **Basic Animations**: Create basic animations such as walking, idle, etc.
-2. **Controls**: Set up controls for easy animation manipulation.
+See [ReadME](animation/README.md).
