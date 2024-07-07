@@ -62,10 +62,5 @@ Creating and assigning materials to different parts of the model is essential fo
 
 Enhancing the visual quality of the model involves also setting up shaders. Blender’s Shader Editor allows you to combine different nodes to create complex material effects. To do so, I had to switch to the Shader Editor and add nodes like Principled BSDF, Image Texture, and Mix Shader to create the desired material effects. By carefully creating and assigning materials and setting up shaders, I could significantly enhance the realism and visual appeal of the 3D models.
 
-## Rigging
-Creating an armature, or skeleton, for the model is essential for animation. This skeleton will serve as the framework for animating the model, allowing for realistic movement and deformation. To create an armature in Blender, I started by adding a single bone to the scene. Switch to Edit Mode, then extrude new bones by selecting the tip of a bone and pressing E. Then I proceed to position and rotate the bones to match the anatomy of the model, ensuring that the bones are properly aligned with the parts of the model they will control.
-
-Once the skeleton is complete, I had to parent the model to the armature by selecting both the model and the armature. You can complete the rigging by choosing to add automatic weights or paint them. This initial setup allowed the bones to control the mesh.
-
 ## Animation
 See [ReadME](animation/README.md).
