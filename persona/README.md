@@ -2,7 +2,7 @@
 Persona model  
 
 <p align="center" margin-top: 20px; margin-bottom: 30px;">
-  <img src="images/Clothes.png" alt="Clothes" style="display: block; margin: auto;" width="25%">
+  <img src="images/Penelope.png" alt="Penelope" style="display: block; margin: auto;" width="25%">
 </p>
 
 ## Overview
@@ -52,6 +52,10 @@ After shaping the torso, proceed to model the arms and legs. Finish by modeling 
 To apply textures accurately, I first had to unwrap the 3D model to create a UV map. This involves flattening the model's surface into a 2D space, allowing for detailed texture application. In Blender, this process involves marking the seams where you want to cut the UV map. After marking the seams, I used the "Unwrap" function to generate the UV map. The UV layout can then be adjusted as needed in the UV Editor to ensure efficient and accurate mapping of the texture.
 
 Once the UV map was ready, I began texture painting. Blender’s texture painting tools allow you to paint directly onto the 3D model or on the texture image itself. To start, switch to Texture Paint Mode by selecting it from the mode menu. Use various brushes and tools to apply colors, textures, and details to the model. This process can be iterative, often requiring multiple adjustments to achieve the desired look.
+
+<p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/Clothes.png" alt="Clothes" style="display: block; margin: auto;" width="25%">
+</p>
 
 ## Materials and Shading
 Creating and assigning materials to different parts of the model is essential for defining surface properties such as color, reflectivity, and roughness, to give the model a realistic appearance. In Blender, you can create materials by opening the Material Properties panel and clicking "New" to add a new material. You can also customized the material properties such as Base Color, Metallic, and Roughness to match the desired look.
