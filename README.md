@@ -2,7 +2,7 @@
 Individual Interactive Graphics project  
 
 <p align="center" margin-top: 20px; margin-bottom: 30px;">
-  <img src="images/Homepage.png" alt="Homepage" style="display: block; margin: auto;" width="25%">
+  <img src="assets/Homepage.png" alt="Homepage" style="display: block; margin: auto;" width="25%">
 </p>
 
 Welcome to the Interactive 3D Graphics Project! This project involves creating a 3D environment where an object moves according to user commands. Below, you will find a detailed breakdown of the project's implementation, challenges, and solutions.  
