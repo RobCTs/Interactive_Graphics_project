@@ -1,6 +1,9 @@
 # 3D Persona
 Persona model  
 
+<p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/Clothes.png" alt="Clothes" style="display: block; margin: auto;" width="25%">
+</p>
 
 ## Overview
 The objective is to create a 3D persona that can move around. The project is developed using Blender 4.1.
