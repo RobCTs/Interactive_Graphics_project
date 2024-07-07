@@ -1,7 +1,7 @@
 # Interactive 3D Graphics Project
 Individual Interactive Graphics project  
 
-<p align="center" margin-top: 20px; margin-bottom: 30px;">
+<p align="center" margin-top: 20px; margin-bottom: 90px;">
   <img src="assets/Homepage.png" alt="Homepage" style="display: block; margin: auto;" width="25%">
 </p>
 
