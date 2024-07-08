@@ -40,17 +40,17 @@ As I progressed, I sculpted a new character, Penelope, in Blender. Once I was do
 
 - a) **Breathing**: I animated the upper torso bones and joints, moving shoulders along the z-axis and spine along the y-axis. Minor twitches in the hand movements were observed, which need correction.
 <p align="center" margin-top: 20px; margin-bottom: 30px;">
-  <img src="images/Breathing.gif" alt="Breathing" style="display: block; margin: auto;" width="25%">
+  <img src="images/Breathing.gif" alt="Breathing" style="display: block; margin: auto;" width="20%">
 </p>
 
 - b) **Walking**: For the walking loop I applied constraints to avoid unnatural rotations, specifically addressing issues noticed in Nyra's animation. Although knee movements and the leg's position was adjusted for a more natural walk, the arms and hand movement are still not precise.
 <p align="center" margin-top: 20px; margin-bottom: 30px;">
-  <img src="images/Walking.gif" alt="Walking" style="display: block; margin: auto;" width="25%">
+  <img src="images/Walking.gif" alt="Walking" style="display: block; margin: auto;" width="20%">
 </p>
 
 - c) **Running**: It is based on the walking animation, but with more exaggerated movements for running.
 <p align="center" margin-top: 20px; margin-bottom: 30px;">
-  <img src="images/Running.gif" alt="Running" style="display: block; margin: auto;" width="25%">
+  <img src="images/Running.gif" alt="Running" style="display: block; margin: auto;" width="20%">
 </p>
 
 - d) **Blinking**: Currently still in progress, due to ongoing adjustments and issues with the skeleton and the mesh for realistic eye movements.
