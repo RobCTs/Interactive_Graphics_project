@@ -51,7 +51,7 @@ Trees were scattered after creating a tree sample by using the add-on Sapling Tr
 ### Additional elements
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/preview.gif" alt="Preview" style="display: block; margin: auto;" width="25%">
+  <img src="images/preview.gif" alt="Preview" style="display: block; margin: auto;" width="30%">
 </p>
 
 To enhance the midground, a variety of trees were added to create a dense forest look. Different types and sizes of trees were used to ensure realism and avoid uniformity. The trees were scattered carefully to achieve a natural appearance, utilizing Blender's geometry nodes for efficient distribution.
@@ -62,7 +62,7 @@ In the background, mountains were added to frame the scene and provide a majesti
 
 ## Final Scene
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/mountains.gif" alt="Result" style="display: block; margin: auto;" width="25%">
+  <img src="images/mountains.gif" alt="Result" style="display: block; margin: auto;" width="30%">
 </p>
 
 The final scene consists of a forest with a river, surrounded by mountains and enriched with detailed vegetation and atmospheric effects. The careful placement of trees in the midground, combined with the blue fog and background mountains, creates a rich and immersive environment. This setting provides a realistic and engaging backdrop for interaction, making the scene feel vibrant and alive.
