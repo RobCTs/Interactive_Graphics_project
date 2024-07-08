@@ -23,6 +23,9 @@ Once the skeleton is complete, I had to parent the model to the armature by sele
 
 ## Creative path
 ### Initial Attempts with Nyra
+![Alt Text](images/nyra_animation.gif)
+
+
 The animation journey began with Nyra, a character used in previous homework assignments. Initially, I attempted to use JavaScript to create a skeleton for animation. This involved significant challenges, leading me to switch to Blender for sculpting, scene creation, and animations. But there is the draft in the assets folder.
 
 So Nyra was imported in Blender, and a skeleton was created bone by bone (rigging) to be able to animate her. Using Blender's timeline, I animated Nyra by posing the skeleton and keyframing her positions. The animation was then looped to create continuous motion.
