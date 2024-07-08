@@ -23,7 +23,10 @@ Once the skeleton is complete, I had to parent the model to the armature by sele
 
 ## Creative path
 ### Initial Attempts with Nyra
-![Alt Text](images/nyra_animation.gif)
+
+<p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/nyra_animation.gif" alt="Rigging" style="display: block; margin: auto;" width="30%">
+</p>
 
 
 The animation journey began with Nyra, a character used in previous homework assignments. Initially, I attempted to use JavaScript to create a skeleton for animation. This involved significant challenges, leading me to switch to Blender for sculpting, scene creation, and animations. But there is the draft in the assets folder.
