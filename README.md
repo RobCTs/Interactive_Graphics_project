@@ -60,6 +60,12 @@ See [ReadME](persona/README.md).
 ## Animation
 See [ReadME](animation/README.md).
 
+
+<p align="center" margin-top: 20px; margin-bottom: 90px;">
+  <img src="assets/Background.png" alt="Changing Room" style="display: block; margin: auto;" width="50%">
+</p>
+
+
 ## Loading and Scripting
 The interactive components of the project are implemented using JavaScript and HTML. The HTML file sets up the basic structure of the web page and includes import maps for loading necessary libraries such as Three.js, GLTFLoader, MTLLoader, OBJLoader, lil-gui and OrbitControls.
 
