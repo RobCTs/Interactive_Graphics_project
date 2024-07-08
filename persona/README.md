@@ -34,21 +34,20 @@ Start by modeling the head using a plane and manipulating it to follow the colou
 
 Then start modelling the eye, mouth and ear as separate entities. Use a circle to shape the eye and mouth regions. Create the eyeball with an UV sphere. Use an additional reference image to model the ears. Utilize proportional editing to refine curves and achieve a more natural look.
 
-The final result:
-<p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Final_result_body.gif" alt="Result" style="display: block; margin: auto;" width="30%">
-</p>
-
 ### Body Modeling
-
-Begin with a cylinder to model the body. Shape the torso by adjusting the vertices based on the reference images. When looking at the front reference, adjust only along the X-axis; for the side (left) reference, adjust only along the Y-axis. This ensures that the model retains correct proportions from all angles.
-
-After shaping the torso, proceed to model the arms and legs. Finish by modeling the feet and hands, ensuring all body parts are proportionate and aligned correctly according to the reference images.
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
   <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
+Begin with a cylinder to model the body. Shape the torso by adjusting the vertices based on the reference images. When looking at the front reference, adjust only along the X-axis; for the side (left) reference, adjust only along the Y-axis. This ensures that the model retains correct proportions from all angles.
+
+After shaping the torso, proceed to model the arms and legs. Finish by modeling the feet and hands, ensuring all body parts are proportionate and aligned correctly according to the reference images.
+
+The final result:
+<p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="images/Final_result_body.gif" alt="Result" style="display: block; margin: auto;" width="30%">
+</p>
 
 ## Texturing
 To apply textures accurately, I first had to unwrap the 3D model to create a UV map. This involves flattening the model's surface into a 2D space, allowing for detailed texture application. In Blender, this process involves marking the seams where you want to cut the UV map. After marking the seams, I used the "Unwrap" function to generate the UV map. The UV layout can then be adjusted as needed in the UV Editor to ensure efficient and accurate mapping of the texture.
