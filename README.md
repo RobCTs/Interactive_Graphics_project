@@ -62,7 +62,7 @@ See [ReadME](animation/README.md).
 
 
 <p align="center" margin-top: 20px; margin-bottom: 90px;">
-  <img src="assets/Background.png" alt="Changing Room" style="display: block; margin: auto;" width="50%">
+  <img src="assets/background.png" alt="Changing Room" style="display: block; margin: auto;" width="50%">
 </p>
 
 
