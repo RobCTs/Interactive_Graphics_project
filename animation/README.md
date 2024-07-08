@@ -25,7 +25,7 @@ Once the skeleton is complete, I had to parent the model to the armature by sele
 ### Initial Attempts with Nyra
 
 <p align="center" margin-top: 20px; margin-bottom: 30px;">
-  <img src="images/nyra_animation.gif" alt="Rigging" style="display: block; margin: auto;" width="30%">
+  <img src="images/nyra_animation.gif" alt="Rigging" style="display: block; margin: auto;" width="15%">
 </p>
 
 
