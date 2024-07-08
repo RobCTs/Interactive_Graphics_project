@@ -86,7 +86,7 @@ Creating and assigning materials to different parts of the model is essential fo
 Enhancing the visual quality of the model also involves setting up shaders. Blender’s Shader Editor allows for combining different nodes to create complex material effects. To achieve this, I switched to the Shader Editor and added nodes like Principled BSDF, Image Texture, and Mix Shader. By carefully creating and assigning materials and setting up shaders, I significantly enhanced the realism and visual appeal of the 3D models.
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Final_result.gif" alt="Result" style="display: block; margin: auto;" width="30%">
+  <img src="images/Result.gif" alt="Result" style="display: block; margin: auto;" width="30%">
 </p>
 
 
