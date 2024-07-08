@@ -68,7 +68,7 @@ The initial curve setup had a high number of vertices and faces to capture detai
 Despite the reduction in detail, the final hair model retained a realistic appearance, complementing the overall character design. The hair was styled to match the character's intended look while ensuring it fit well with the head and body proportions.
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Hair.png" alt="Torso" style="display: block; margin: auto;" width="25%">
+  <img src="images/Hair.gif" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
 ## Texturing
