@@ -36,18 +36,18 @@ Then start modelling the eye, mouth and ear as separate entities. Use a circle t
 
 The final result:
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Final_result.gif" alt="Result" style="display: block; margin: auto;" width="30%">
+  <img src="images/Final_result_body.gif" alt="Result" style="display: block; margin: auto;" width="30%">
 </p>
 
 ### Body Modeling
 
-<p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="25%">
-</p>
-
 Begin with a cylinder to model the body. Shape the torso by adjusting the vertices based on the reference images. When looking at the front reference, adjust only along the X-axis; for the side (left) reference, adjust only along the Y-axis. This ensures that the model retains correct proportions from all angles.
 
 After shaping the torso, proceed to model the arms and legs. Finish by modeling the feet and hands, ensuring all body parts are proportionate and aligned correctly according to the reference images.
+
+<p align="center" margin-top: 20px; margin-bottom: 20px;">
+  <img src="images/Torso_with_reference.png" alt="Torso" style="display: block; margin: auto;" width="25%">
+</p>
 
 
 ## Texturing
