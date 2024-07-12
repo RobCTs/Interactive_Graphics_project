@@ -47,7 +47,7 @@ As I progressed, I sculpted a new character, Penelope, in Blender. Once I was do
 - d) **Blinking**: Currently still in progress, due to ongoing adjustments and issues with the skeleton and the mesh for realistic eye movements.
 
 ## 3D scene optimization
-Due to time constraints, and given the complexity and variety of possible movements (e.g., starting to walk, stopping, turning right, turning left), I could not implement all the movements needes. So I just use the walking-running animations. An alternative, instead of creating every and each one of those movement, is relying on a predefined animation pack from Mixamo to create these basic movements ensuring smooth performance despite the complexity of the animations.
+Due to time constraints, and given the complexity and variety of possible movements (e.g., starting to walk, stopping, turning right, turning left), I could not implement all the movements needed. So I just use the walking-running animations. An alternative, instead of creating every and each one of those movement, is relying on a predefined animation pack from Mixamo to create these basic movements ensuring smooth performance despite the complexity of the animations.
 
 ## Most relevant challenges 
 There were several (ongoing) challenges, but for the animation probably the most noticeable was that joints exhibited unnatural rotations, which were solved at a later point with some constraints to limit the movement of a bone on a specific axis.

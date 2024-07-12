@@ -68,7 +68,7 @@ The initial curve setup had a high number of vertices and faces to capture detai
 Despite the reduction in detail, the final hair model retained a realistic appearance, complementing the overall character design. The hair was styled to match the character's intended look while ensuring it fit well with the head and body proportions.
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Hair.png" alt="Torso" style="display: block; margin: auto;" width="25%">
+  <img src="images/Hair.gif" alt="Torso" style="display: block; margin: auto;" width="25%">
 </p>
 
 ## Texturing
@@ -86,7 +86,7 @@ Creating and assigning materials to different parts of the model is essential fo
 Enhancing the visual quality of the model also involves setting up shaders. Blender’s Shader Editor allows for combining different nodes to create complex material effects. To achieve this, I switched to the Shader Editor and added nodes like Principled BSDF, Image Texture, and Mix Shader. By carefully creating and assigning materials and setting up shaders, I significantly enhanced the realism and visual appeal of the 3D models.
 
 <p align="center" margin-top: 20px; margin-bottom: 20px;">
-  <img src="images/Final_result.gif" alt="Result" style="display: block; margin: auto;" width="30%">
+  <img src="images/Result.gif" alt="Result" style="display: block; margin: auto;" width="30%">
 </p>
 
 

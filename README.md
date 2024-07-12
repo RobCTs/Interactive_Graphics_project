@@ -29,7 +29,7 @@ This project aims to create an interactive 3D environment where users can move a
 
 
 ## Features
-This project boasts several key features that enhance the user experience and demonstrate the capabilities of combining 3D modeling with interactive programming. The 3D environment includes a wavy plane textured with a mix of ground textures, scattered grass, rocks, and trees for a realistic look. The dynamic skydome features a starry night sky with animated clouds, adding depth and immersion to the scene. Users can control the movement of a character named Nyra within the 3D space, with customizable lighting options to adjust the scene's light and brightness settings to their preference. A dynamic camera system follows Nyra as she moves, providing a seamless and engaging viewing experience.
+This project boasts several key features that enhance the user experience and demonstrate the capabilities of combining 3D modeling with interactive programming. The 3D environment includes a wavy plane textured with a mix of ground textures, scattered grass, rocks, and trees for a realistic look. Users can control the movement of a character named Penelope within the 3D space, with customizable lighting options to adjust the scene's light and brightness settings to their preference. A dynamic camera system follows Penelope as she moves, providing a seamless and engaging viewing experience.
 
 ## Installation
 To get started with the project, you need to clone the repository to your local machine using the following command:
@@ -45,7 +45,7 @@ cd interactive-3d-environment
 Once in the project directory, open the index.html file in a web browser to run the project.
 
 ## Usage
-Once you have the project running in your web browser, , you will be presented with an option to choose between two different scenes:
+Once you have the project running in your web browser, you will be presented with an option to choose between two different scenes:
 
 a) **Main 3D scene**: In this environment, you can interact with the 3D environment. Use the provided on-screen controls or keyboard commands to move Penelope within the environment. Adjust the lighting and brightness settings using the available options to see how the scene changes. The camera will dynamically follow Penelope, providing different angles and perspectives as she moves.
 
