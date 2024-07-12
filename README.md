@@ -74,9 +74,9 @@ The JavaScript file initializes the 3D scene by creating a Three.js scene, camer
 For the Changing Room scene, additional loaders and controls are used to load and manage the FBX models and animations. The scene allows users to interact with Penelope by playing different animations through a simple button interface.
 
 ## Object Movement and Camera (3D scene)
-User commands for moving Nyra are captured and processed using event listeners in JavaScript. The movement logic considers the terrain’s elevation, ensuring Nyra moves smoothly over the wavy plane without disappearing into the ground. This is achieved by implementing a raytracer that calculates the y-coordinate based on the plane’s surface at a given x and z position.
+User commands for moving Penelope are captured and processed using event listeners in JavaScript. The movement logic considers the terrain’s elevation, ensuring Penelope moves smoothly over the wavy plane without disappearing into the ground. This is achieved by implementing a raytracer that calculates the y-coordinate based on the plane’s surface at a given x and z position.
 
-The camera system is designed to follow Nyra, providing a dynamic view that enhances the interactive experience. The camera's movement is restricted to prevent it from going below the ground, achieved by setting limits on the camera’s angle and position. As Nyra moves, the camera smoothly transitions to new positions, maintaining an optimal view of the character and the surrounding environment.
+The camera system is designed to follow Penelope, providing a dynamic view that enhances the interactive experience. The camera's movement is restricted to prevent it from going below the ground, achieved by setting limits on the camera’s angle and position. As Penelope moves, the camera smoothly transitions to new positions, maintaining an optimal view of the character and the surrounding environment.
 
 
 ## Challenges and Solutions

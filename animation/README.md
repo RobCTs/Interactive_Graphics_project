@@ -12,7 +12,7 @@ This document details the creation and implementation of animations within the I
 ## Features
 The animations primarily involve the character Penelope performing various actions. These animations are divided into two main scenes:
 
-- **Changing Room Scene**: Penelope performs specific actions such as blinking, breathing, walking, and running.
+- **Changing Room Scene**: Penelope performs specific actions such as breathing, walking and running.
 
 - **3D Scene**: Penelope moves within a dynamic 3D environment using predefined animation packs. 
 
@@ -47,7 +47,7 @@ As I progressed, I sculpted a new character, Penelope, in Blender. Once I was do
 - d) **Blinking**: Currently still in progress, due to ongoing adjustments and issues with the skeleton and the mesh for realistic eye movements.
 
 ## 3D scene optimization
-Due to time constraints, and given the complexity and variety of possible movements (e.g., starting to walk, stopping, turning right, turning left), instead of creating every and each one of those movement, I relied to a predefined animation pack from Mixamo to create these basic movements ensuring smooth performance despite the complexity of the animations. This approach ensured that Penelope's movements in the main scene were fluid and realistic within the project’s time constraints.
+Due to time constraints, and given the complexity and variety of possible movements (e.g., starting to walk, stopping, turning right, turning left), I could not implement all the movements needes. So I just use the walking-running animations. An alternative, instead of creating every and each one of those movement, is relying on a predefined animation pack from Mixamo to create these basic movements ensuring smooth performance despite the complexity of the animations.
 
 ## Most relevant challenges 
 There were several (ongoing) challenges, but for the animation probably the most noticeable was that joints exhibited unnatural rotations, which were solved at a later point with some constraints to limit the movement of a bone on a specific axis.
@@ -59,6 +59,7 @@ I also kept forgetting to "Apply All Transforms" (in Blender) or apply the modif
 **Breathing Animation**: Fix minor tremors in the breathing animation.
 **Walking and Running**: Make movements more linear and improve arm and hand animations.  
 **Performance**: Further optimize the overall performance for smoother animations.  
+**Extra animations**: Create more animations for a more realistic game performance.  
 
 ## Conclusion
 The animations in the Interactive 3D Graphics Project bring the character Penelope to life, allowing users to interact with her in both the main 3D scene and the Changing Room scene. The process involved overcoming several challenges, but the use of tools like Blender and Three.js made it possible to create realistic and engaging animations.

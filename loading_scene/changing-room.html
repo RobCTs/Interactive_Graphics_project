@@ -89,7 +89,6 @@
   <div id="container">
     <div id="controls">
       <h2>Hi, <br> I am Penelope!<br>Click the buttons and watch me perform the animation.</h2>
-      <button onclick="loadAnimation('Blinking')">Blink</button>
       <button onclick="loadAnimation('Breathing')">Breathe</button>
       <button onclick="loadAnimation('Walking')">Walk</button>
       <button onclick="loadAnimation('Running')">Run</button>
@@ -126,33 +125,120 @@ function init() {
   controls.target.set(0, 0, 0); // set the target to the center of the scene
   
   // Add ambient lights
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.3); //0.6
   scene.add(ambientLight);
 
   // Add directional lights
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.6);
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 0.1); //0.6
   directionalLight.position.set(1, 1, 1).normalize();
   scene.add(directionalLight);
 
   // Load the initial model
-  //loadModel('../persona/object/Penelope.obj','../persona/object/Penelope.mtl');
-  loadModel('../persona/object/Penelope.fbx');
+  loadModel('../persona/object/Penelope.obj','../persona/object/Penelope.mtl');
+  // loadModel('../persona/object/Penelope.fbx');
 
   // Start the animation loop
   animate();
 }
+function loadModel(objPath, mtlPath) {
+    const mtlLoader = new THREE.MTLLoader();
+    mtlLoader.load(mtlPath, function(materials) {
+        materials.preload();
 
-function loadModel(fbxPath) {
-      const loader = new THREE.FBXLoader();
-      loader.load(fbxPath, function (object) {
-        console.log('FBX file loaded', object);
+        const objLoader = new THREE.OBJLoader();
+        objLoader.setMaterials(materials);
+        objLoader.load(objPath, function(object) {
+            console.log('OBJ file loaded', object);
 
-        // Clear previous model
-        if (model) {
-          scene.remove(model);
-          model = null;
-        }
+            // Clear previous model
+            if (model) {
+                scene.remove(model);
+                model = null;
+            }
 
+            model = object;
+
+            // Scale the model down
+            model.scale.set(0.143, 0.143,0.143);
+            // Center the model
+            model.position.set(0, -3, 0);
+
+            // Adjust material properties
+            model.traverse(function(child) {
+                if (child.isMesh) {
+                    console.log('Mesh:', child.name);
+                    console.log('Material:', child.material);
+
+                    // If the material is an array, handle each material in the array
+                    if (Array.isArray(child.material)) {
+                        child.material.forEach((mat, index) => {
+                            console.log(`Material ${index}:`, mat);
+                            handleMaterial(mat);
+                        });
+                    } else {
+                        handleMaterial(child.material);
+                    }
+                }
+            });
+
+            scene.add(model);
+        }, undefined, (error) => {
+            console.error('Error loading the OBJ model:', error);
+        });
+    });
+}
+// function loadModel(fbxPath) {
+//     const loader = new THREE.FBXLoader();
+//     loader.load(fbxPath, function (object) {
+//         console.log('FBX file loaded', object);
+
+//         // Clear previous model
+//         if (model) {
+//             scene.remove(model);
+//             model = null;
+//         }
+
+//         model = object;
+
+//         // Scale the model down
+//         model.scale.set(0.035, 0.035, 0.035);
+//         // Center the model
+//         model.position.set(0, -3, 0);
+
+//         // Adjust material properties
+//         model.traverse(function (child) {
+//             if (child.isMesh) {
+//                 console.log('Mesh:', child.name);
+//                 console.log('Material:', child.material);
+
+//                 // If the material is an array, handle each material in the array
+//                 if (Array.isArray(child.material)) {
+//                     child.material.forEach((mat, index) => {
+//                         console.log(`Material ${index}:`, mat);
+//                         handleMaterial(mat);
+//                     });
+//                 } else {
+//                     handleMaterial(child.material);
+//                 }
+//             }
+//         });
+
+//         scene.add(model);
+//     }, undefined, (error) => {
+//         console.error('Error loading the FBX model:', error);
+//     });
+// }
+
+function loadAnimation(animationName) {
+    const loader = new THREE.FBXLoader();
+
+    // Clear previous model
+    if (model) {
+        scene.remove(model);
+        model = null;
+    }
+
+    loader.load(`../animation/${animationName}.fbx`, function (object) {
         model = object;
 
         // Scale the model down
@@ -160,153 +246,79 @@ function loadModel(fbxPath) {
         // Center the model
         model.position.set(0, -3, 0);
 
-        // Adjust material properties
+        // Traverse the model to find the materials and adjust their properties
         model.traverse(function (child) {
-          if (child.isMesh) {
-            child.material.transparent = false;
-            child.material.opacity = 1;
-            child.material.depthWrite = true;
-            child.material.blending = THREE.NoBlending;
-            if (child.material.color) {
-              child.material.color.set(0xffffff);
+            if (child.isMesh) {
+                console.log('Mesh:', child.name);
+                console.log('Material:', child.material);
+
+                // If the material is an array, handle each material in the array
+                if (Array.isArray(child.material)) {
+                    child.material.forEach((mat, index) => {
+                        console.log(`Material ${index}:`, mat);
+                        handleMaterial(mat);
+                    });
+                } else {
+                    handleMaterial(child.material);
+                }
             }
-            if (child.material.map) {
-              child.material.map.encoding = THREE.sRGBEncoding;
-              child.material.map.needsUpdate = true;
-            }
-          }
         });
 
+        mixer = new THREE.AnimationMixer(model);
+        const action = mixer.clipAction(model.animations[0]);
+
+        if (animationName === 'Walking') {
+            action.timeScale = 0.6; // slow down the walking animation
+        }
+
+        action.play();
         scene.add(model);
-      }, undefined, (error) => {
+    }, undefined, (error) => {
         console.error('Error loading the FBX model:', error);
-      });
-    }
-
-
-// function loadModel(objPath, mtlPath) {
-//   const mtlLoader = new THREE.MTLLoader();
-
-//   mtlLoader.load(mtlPath, (materials) => {
-//     console.log('MTL file loaded', materials);
-//     materials.preload();
-
-//     // Log preloaded materials
-//     // for (const materialName in materials.materials) {
-//     //   console.log(`Material loaded: ${materialName}`, materials.materials[materialName]);
-//     // }
-//     const objLoader = new THREE.OBJLoader();
-//     objLoader.setMaterials(materials);  
-
-//     objLoader.load(objPath, (object) => {
-//       console.log('OBJ file loaded', object);
-
-//       // Clear previous model
-//       if (model) {
-//         scene.remove(model);
-//         model = null;
-//       }
-
-//       model = object;
-
-//       // Scale the model down
-//       model.scale.set(3.5, 3.5, 3.5);
-
-//       // Center the model
-//       model.position.set(0, -3, 0);
-
-//       // Log material application
-//       model.traverse((child) => {
-//         if (child.isMesh) {
-//           console.log('Mesh found:', child.name, 'Material name:', child.material.name);
-
-//           // Force material assignment by matching material names
-//           const materialName = child.material.name;
-//           if (materials.materials[materialName]) {
-//             console.log(`Applying material ${materialName} to`, child);
-//             child.material = materials.materials[materialName];
-//             if (child.material.map) {
-//               console.log('Texture map:', child.material.map);
-//             } else {
-//               console.log('No texture map found on', child);
-//             }
-//           } else {
-//             console.log(`No material found for ${materialName}, setting default material`, child);
-//             child.material = new THREE.MeshStandardMaterial({ color: 0xff00ff }); // Set a default material to see if it applies
-//           }
-//         }
-//       });
-
-//       scene.add(model);
-//       }, undefined, (error) => {
-//         console.error('Error loading the OBJ model:', error);
-//       });
-//     }, undefined, (error) => {
-//       console.error('Error loading the MTL material:', error);
-//   });
-// }
-
-function loadAnimation(animationName) {
-  const loader = new THREE.FBXLoader();
-
-  // Clear previous model
-  if (model) {
-    scene.remove(model);
-    model = null;
-  }
-
-  loader.load(`../animation/${animationName}.fbx`, function (object) {
-    model = object;
-
-    // Scale the model down
-    model.scale.set(0.035, 0.035, 0.035); 
-    // Center the model
-    model.position.set(0, -3, 0); 
-
-    // Traverse the model to find the materials and adjust their properties
-    model.traverse(function (child) {
-      if (child.isMesh) {
-         // Ensure the material is not transparent
-        child.material.transparent = false;
-        // Set the opacity
-        child.material.opacity = 1;
-        // Ensure depth write is enabled
-        child.material.depthWrite = true;
-        // Disable blending
-        child.material.blending = THREE.NoBlending;
-        // Ensure material color is white
-        if (child.material.color) {
-          child.material.color.set(0xffffff);
-        }
-        // Ensure the material color is set correctly
-        if (child.material.map) {
-          child.material.map.encoding = THREE.sRGBEncoding;
-          child.material.map.needsUpdate = true;
-        }
-      }
     });
+}
 
-    mixer = new THREE.AnimationMixer(model);
-    const action = mixer.clipAction(model.animations[0]);
+function handleMaterial(material) {
+    // // Ensure the material is not transparent
+    material.transparent = false;
+    // Set the opacity
+    material.opacity = 0.5;
+    // Ensure depth write is enabled
+    material.depthWrite = true;
+    // Ensure depth test is enabled
+    material.depthTest = true;
+    // Set alpha test to handle transparency (slightly above 0)
+    material.alphaTest = 0.05;
+    // Set blending mode to normal
+    material.blending = THREE.NormalBlending;
 
-    if (animationName === 'Walking') {
-      action.timeScale = 0.6; // slow down the walking animation
+    // Render both sides of the material
+    material.side = THREE.DoubleSide; //otherwise see-through
+
+    // Log texture maps
+    if (material.map) {
+        console.log('Texture map:', material.map);
+        material.map.encoding = THREE.sRGBEncoding;
+        // Check if the texture image is loaded
+        if (material.map.image !== undefined) {
+            material.map.needsUpdate = true;
+        } else {
+            console.log('Texture image is undefined for material:', material.name);
+        }
+    } else {
+        console.log('No texture map found for material:', material.name);
     }
-
-    action.play();
-    scene.add(model);
-  });
 }
 
 // Animation loop
 function animate() {
-  requestAnimationFrame(animate);
-  if (mixer) mixer.update(0.01);
-  controls.update();
-  renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+    if (mixer) mixer.update(0.01);
+    controls.update();
+    renderer.render(scene, camera);
 }
 
-//Initialize the scene
+// Initialize the scene
 window.onload = init;
   </script>
 </body>
