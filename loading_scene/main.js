@@ -31,6 +31,8 @@ function init() {
     directionalLight.position.set(0, 1, 1).normalize();
     scene.add(ambientLight, directionalLight);
 
+    scene.background = new THREE.Color(0x87CEEB);
+    
     // Load the environment model
     new GLTFLoader().load('../environment/object/scene.glb', (gltf) => {
         model = gltf.scene;
@@ -51,6 +53,37 @@ function init() {
         model.traverse((child) => {
             // logObjectDetails(child);
             if (child.isMesh) {
+                const material = child.material;
+                 // Ensure transparent materials are properly handled
+                 if (material) {
+                    // General transparency handling
+                    if (material.map && (material.transparent || material.alphaTest)) {
+                        material.transparent = true;
+                        material.alphaTest = 0.5;
+                        material.side = THREE.DoubleSide; // Optional, for two-sided transparency
+                        material.depthWrite = false; // Prevents issues with depth
+                        material.needsUpdate = true;
+                    }
+                    // Handle specific material names if needed
+                    if (material.name === 'Water') {
+                        material.transparent = true;
+                        material.alphaTest = 0.5;
+                        material.side = THREE.DoubleSide; // Optional, for two-sided transparency
+                        //material.depthWrite = false; // Prevents issues with depth
+                        //material.opacity = 0.3; // Adjust opacity for transparency effect
+                        material.color = new THREE.Color(0x0000ff); // Optional: Adjust color if needed
+                        material.metalness = 0.5; // Simulate reflective water surface
+                        material.roughness = 0.1; // Smooth surface
+                        material.needsUpdate = true;
+                    } else if (material.name === 'leaves') {
+                        material.transparent = true;
+                        material.alphaTest = 0.5;
+                        material.side = THREE.DoubleSide; // Optional, for two-sided transparency
+                        material.depthWrite = false; // Prevents issues with depth
+                        material.needsUpdate = true;
+                    }
+                }
+
                 // Identify ground mesh
                 if (child.name === 'Landscape' || child.material.name === 'Material.001') {
                     //console.log('Ground Mesh Identified:', child);
