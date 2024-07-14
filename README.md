@@ -61,11 +61,6 @@ See [ReadME](persona/README.md).
 See [ReadME](animation/README.md).
 
 
-<p align="center" margin-top: 20px; margin-bottom: 90px;">
-  <img src="assets/background.png" alt="Changing Room" style="display: block; margin: auto;" width="30%">
-</p>
-
-
 ## Loading and Scripting
 The interactive components of the project are implemented using JavaScript and HTML. The HTML file sets up the basic structure of the web page and includes import maps for loading necessary libraries such as Three.js, GLTFLoader, MTLLoader, OBJLoader, lil-gui and OrbitControls.
 
@@ -74,13 +69,17 @@ The JavaScript file initializes the 3D scene by creating a Three.js scene, camer
 For the Changing Room scene, additional loaders and controls are used to load and manage the FBX models and animations. The scene allows users to interact with Penelope by playing different animations through a simple button interface.
 
 <p align="center" margin-top: 20px; margin-bottom: 90px;">
-  <img src="assets/Scene.png" alt="Scene" style="display: block; margin: auto;" width="30%">
+  <img src="assets/background.png" alt="Changing Room" style="display: block; margin: auto;" width="30%">
 </p>
 
 ## Object Movement and Camera (3D scene)
 User commands for moving Penelope are captured and processed using event listeners in JavaScript. The movement logic considers the terrain’s elevation, ensuring Penelope moves smoothly over the wavy plane without disappearing into the ground. This is achieved by implementing a raytracer that calculates the y-coordinate based on the plane’s surface at a given x and z position.
 
 The camera system is designed to follow Penelope, providing a dynamic view that enhances the interactive experience. The camera's movement is restricted to prevent it from going below the ground, achieved by setting limits on the camera’s angle and position. As Penelope moves, the camera smoothly transitions to new positions, maintaining an optimal view of the character and the surrounding environment.
+
+<p align="center" margin-top: 20px; margin-bottom: 90px;">
+  <img src="assets/Scene.png" alt="Scene" style="display: block; margin: auto;" width="30%">
+</p>
 
 
 ## Challenges and Solutions
