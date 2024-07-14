@@ -39,10 +39,19 @@ Nyra's clothes and textures were not adequately addressed initially. Which were 
 As I progressed, I sculpted a new character, Penelope, in Blender. Once I was done, I adapted Nyra's skeleton for Penelope, starting with simpler animations like breathing.
 
 - a) **Breathing**: I animated the upper torso bones and joints, moving shoulders along the z-axis and spine along the y-axis. Minor twitches in the hand movements were observed, which need correction.
+<p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/Breathing.gif" alt="Breathing animation" style="display: block; margin: auto;" width="30%">
+</p>
 
 - b) **Walking**: For the walking loop I applied constraints to avoid unnatural rotations, specifically addressing issues noticed in Nyra's animation. Although knee movements and the leg's position was adjusted for a more natural walk, the arms and hand movement are still not precise.
+<p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/Walking.gif" alt="Walking animation" style="display: block; margin: auto;" width="30%">
+</p>
 
 - c) **Running**: It is based on the walking animation, but with more exaggerated movements for running.
+  <p align="center" margin-top: 20px; margin-bottom: 30px;">
+  <img src="images/Running.gif" alt="Running animation" style="display: block; margin: auto;" width="30%">
+</p>
 
 - d) **Blinking**: Currently still in progress, due to ongoing adjustments and issues with the skeleton and the mesh for realistic eye movements.
 
