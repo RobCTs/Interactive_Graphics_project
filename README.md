@@ -74,7 +74,7 @@ The JavaScript file initializes the 3D scene by creating a Three.js scene, camer
 For the Changing Room scene, additional loaders and controls are used to load and manage the FBX models and animations. The scene allows users to interact with Penelope by playing different animations through a simple button interface.
 
 <p align="center" margin-top: 20px; margin-bottom: 90px;">
-  <img src="assets/scene.png" alt="Scene" style="display: block; margin: auto;" width="30%">
+  <img src="assets/Scene.png" alt="Scene" style="display: block; margin: auto;" width="30%">
 </p>
 
 ## Object Movement and Camera (3D scene)
